@@ -1,5 +1,13 @@
+import NavigationBar from "./components/NavigationBar";
+import Footer from "./components/Footer";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <NavigationBar />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

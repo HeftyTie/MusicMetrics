@@ -17,6 +17,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-spotify-green {
+  --tw-text-opacity: 1;
+  color: rgb(29, 185, 84) /* #1DB954 */;
+}
+
+.hover\:text-spotify-green:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29, 185, 84) /* #1DB954 */;
+}
+
+.ring-spotify-green {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(29, 185, 84) /* #1DB954 */;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
