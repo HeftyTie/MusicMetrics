@@ -1,10 +1,15 @@
-import { FaSearch } from "react-icons/fa";
+import { FaHome, FaSearch } from "react-icons/fa";
 import { MdOutlineBarChart, MdOutlineShowChart } from "react-icons/md";
 
 function Footer() {
   return (
     <div className="fixed bottom-0 w-full align-middle">
-      <div className="flex items-center p-4 justify-evenly">
+      <div className="flex items-center p-4 pb-2 justify-evenly">
+        <div className="flex flex-col items-center justify-center text-center">
+          <FaHome className="text-2xl text-spotify-green" />
+          <span className="text-sm">Home</span>
+        </div>
+
         <div className="flex flex-col items-center justify-center text-center">
           <MdOutlineShowChart className="text-2xl text-spotify-green" />
           <span className="text-sm">Trends</span>
