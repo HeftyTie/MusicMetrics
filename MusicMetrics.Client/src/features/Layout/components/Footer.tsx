@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="flex items-center p-4 pb-2 justify-evenly">
+    <div className="flex items-center py-2 justify-evenly">
       <Link
         to="/"
         className="flex flex-col items-center justify-center text-center"

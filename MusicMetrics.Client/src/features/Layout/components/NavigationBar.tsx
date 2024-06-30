@@ -1,4 +1,4 @@
-import { FaSpotify } from "react-icons/fa";
+import { OpenSpotifyApp } from "../../../components/OpenSpotifyApp";
 
 interface NavigationBarProps {
   toggleDrawer: () => void;
@@ -23,15 +23,8 @@ export const NavigationBar: React.FC<NavigationBarProps> = ({
         />
         <p className="text-lg">{username || "Guest"}</p>
       </button>
-      <a
-        href="spotify://"
-        onClick={(e) => {
-          e.preventDefault();
-          window.open("spotify://", "_blank");
-        }}
-      >
-        <FaSpotify className="m-3 text-4xl bg-black rounded-full md:text-5xl text-spotify-green" />
-      </a>
+
+      <OpenSpotifyApp />
     </div>
   );
 };
