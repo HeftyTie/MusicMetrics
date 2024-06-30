@@ -8,8 +8,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,53 +15,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.text-spotify-green {
-  --tw-text-opacity: 1;
-  color: rgb(29, 185, 84) /* #1DB954 */;
+.theme-dark {
+  --text-color: hsla(0, 0%, 100%, 0.87);
+  --background-color: hsl(0, 0%, 14%);
 }
 
-.hover\:text-spotify-green:hover {
-  --tw-text-opacity: 1;
-  color: rgb(29, 185, 84) /* #1DB954 */;
+.theme-light {
+  --text-color: hsl(0, 0%, 0%);
+  --background-color: hsl(0, 0%, 100%);
 }
 
-.ring-spotify-green {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(29, 185, 84) /* #1DB954 */;
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-a:hover .rotate {
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-a:hover .move {
-  animation: move 1s ease-in-out infinite;
+.drawer {
+  background-color: var(--background-color);
 }

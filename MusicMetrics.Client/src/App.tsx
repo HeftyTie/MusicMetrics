@@ -1,13 +1,13 @@
-import NavigationBar from "./components/NavigationBar";
-import Footer from "./components/Footer";
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Layout } from "./features/Layout/Layout";
 
-function App() {
+export const App: React.FC = () => {
   return (
-    <>
-      <NavigationBar />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
-
-export default App;
+};

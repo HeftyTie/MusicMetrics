@@ -1,0 +1,65 @@
+.text-spotify-green {
+    --tw-text-opacity: 1;
+    color: rgb(29, 185, 84) /* #1DB954 */;
+  }
+  
+  .hover\:text-spotify-green:hover {
+    --tw-text-opacity: 1;
+    color: rgb(29, 185, 84) /* #1DB954 */;
+  }
+  
+  .ring-spotify-green {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(29, 185, 84) /* #1DB954 */;
+  }
+  
+  .bg-spotify-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29, 185, 84) /* #1DB954 */;
+  }
+  
+  .bg-darker-spotify-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(19, 169, 71) /* #1DB954 */;
+  }
+  
+  a:hover .rotate {
+    animation: rotate 2s linear infinite;
+  }
+  
+  a:hover .move {
+    animation: move 1s ease-in-out infinite;
+  }
+  
+  .btn {
+    @apply px-3 py-1 font-bold rounded-full md:px-5 md:py-2 md:text-xl;
+  }
+  
+  .btn-spotify-green {
+    @apply bg-spotify-green
+  }
+  
+  .btn-spotify-green:hover {
+    @apply bg-darker-spotify-green
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
